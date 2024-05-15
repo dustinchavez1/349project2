@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* In your CSS file like globals.css */
+
+:root {
+  --foreground-rgb: 241, 250, 238;
+    --background-start-rgb: 29, 53, 87;
+    --background-end-rgb: 0, 0, 0;
+  }
+
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 241, 250, 238;
+    --background-start-rgb: 29, 53, 87;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  font-family: 'Comfortaa', sans-serif;
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+    
+}
+
+html {
+  scroll-behavior: smooth;
+}
